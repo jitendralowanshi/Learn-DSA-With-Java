@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AppendFn_In_StringBuilder {
 
-    public static void hello() {
+    public static void addTwoStrings() {
         StringBuilder result = new StringBuilder();
         Scanner sc = new Scanner(System.in);
 
@@ -43,7 +43,7 @@ public class AppendFn_In_StringBuilder {
         sb.append('o');
 
         System.out.println(sb);
-        hello();
+        addTwoStrings();
 
     }
 
