@@ -1,6 +1,8 @@
 package LearnStrings;
 
 public class StringDeclaration {
+//    Strings are immutable we cannot change
+
     public static void main(String[] args) {
         String firstName = "jitendra";
         String lastName = "Lowanshi";
