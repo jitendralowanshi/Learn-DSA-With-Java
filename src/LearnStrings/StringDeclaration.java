@@ -5,7 +5,7 @@ public class StringDeclaration {
         String firstName = "jitendra";
         String lastName = "Lowanshi";
 
-// CONCATINATING TWO STRINGS
+// CONCATINATING TWO STRINGS .
         String fullName = firstName + lastName;
         System.out.println(fullName);
 

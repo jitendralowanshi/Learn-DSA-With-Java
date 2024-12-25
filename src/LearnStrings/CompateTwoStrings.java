@@ -13,7 +13,7 @@ public class CompateTwoStrings {
         System.out.println(name.compareTo(surname));
 
         if (name.compareTo(surname)==0) {
-            System.out.println("String are equal");
+            System.out.println("String are equal to");
         }
         else {
             System.out.println("Strings are sot equal");
