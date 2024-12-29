@@ -52,6 +52,7 @@ public class AllStringMethods {
         System.out.println(stringAge+6);
 
 
+
 //        10 TENTH METHOD       replace()
 //        11 ELEVANTH METHOD    contains()
 //        12 TWELTH METHOD      substringn();
