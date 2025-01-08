@@ -1,4 +1,4 @@
-package LearnStrings;
+package Learn_Strings;
 
 public class StringDeclaration {
 //    Strings are immutable we cannot change

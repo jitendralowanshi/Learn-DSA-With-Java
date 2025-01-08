@@ -1,6 +1,7 @@
-package LearnStrings;
+package Learn_Strings;
 
 class String_Builder {
+
     public static void stringBuilder() {
         java.lang.StringBuilder sb = new java.lang.StringBuilder("jitendra");
         System.out.println(sb);
@@ -22,14 +23,35 @@ class String_Builder {
         sb.append("L1C");
         System.out.println(sb);
 
+    }
 
 
 
+    public static void reverseString() {
+        StringBuilder sb = new StringBuilder("HELLO");
+
+
+        for (int i=0; i<sb.length()/2; i++) {
+            //value find
+            int frunt = i;
+            int back = sb.length()-1-i;
+
+//            character find
+            char fruntChar = sb.charAt(frunt);
+            char backChar = sb.charAt(back);
+
+//            setcharat function use
+            sb.setCharAt(frunt, backChar);
+            sb.setCharAt(back, fruntChar);
+
+        }
+        System.out.println(sb);
     }
 
     public static void main(String[] args) {
         stringBuilder();
         System.out.println("Thanks to learn StringBuilder");
+        reverseString();
 
     }
 }

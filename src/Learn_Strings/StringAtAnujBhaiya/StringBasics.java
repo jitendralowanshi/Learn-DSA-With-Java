@@ -1,6 +1,4 @@
-package LearnStrings.StringAtAnujBhaiya;
-
-import java.sql.SQLOutput;
+package Learn_Strings.StringAtAnujBhaiya;
 
 public class StringBasics {
     public static void main(String[] args) {

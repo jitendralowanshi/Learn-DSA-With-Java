@@ -1,4 +1,4 @@
-package LearnStrings;
+package Learn_Strings;
 
 public class StringTypcast {
 //    in java String can not be converted in integer

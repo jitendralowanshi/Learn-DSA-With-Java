@@ -23,10 +23,10 @@ public class LinkedListInJava {
         int data = sc.nextInt();
         Node newNode = new Node(data);
         if (head == null){
-            head =newNode;
+            head = newNode;
         }
         else {
-            newNode.next =head;
+            newNode.next =  head;
             head = newNode;
         }
 

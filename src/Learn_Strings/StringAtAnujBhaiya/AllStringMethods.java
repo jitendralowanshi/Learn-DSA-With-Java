@@ -1,4 +1,4 @@
-package LearnStrings.StringAtAnujBhaiya;
+package Learn_Strings.StringAtAnujBhaiya;
 
 public class AllStringMethods {
     public static void main(String[] args) {

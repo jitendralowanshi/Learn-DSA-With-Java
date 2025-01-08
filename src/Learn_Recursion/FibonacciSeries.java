@@ -1,4 +1,4 @@
-package LearnRecursion;
+package Learn_Recursion;
 
 import java.util.Scanner;
 

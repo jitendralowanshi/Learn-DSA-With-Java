@@ -1,4 +1,4 @@
-package LearnStrings.StringAtAnujBhaiya;
+package Learn_Strings.StringAtAnujBhaiya;
 
 import java.util.Scanner;
 
