@@ -40,7 +40,7 @@ public class ReturnArrayInMethod {
 
         System.out.println("enter your array size ");
         int n = sc.nextInt();
-        int arr[] = new int[n];
+        int[] arr = new int[n];
 
         System.out.println("enter your array elements ");
         for (int i=0; i<n; i++) {
