@@ -18,7 +18,15 @@ public class SortArray {
 
             }
         }
+
+//        Using while loop
+        int i = 0;
+        int j = arr.length;
+        while(i < j/2) {
+
+        }
         return arr;
+
     }
 
     public static void main(String[] args) {
@@ -33,15 +41,10 @@ public class SortArray {
             arr[i] = sc.nextInt();
         }
 
-//        for(int an: arr){
-//            System.out.print(an+" ");
-//        }
-//        System.out.println();
 
-
-       sortArr(arr);
+        int[] returnArr = sortArr(arr);
         System.out.println("Your sorted array is ");
-        for (int ans: arr){
+        for (int ans: returnArr){
             System.out.print(ans+" ");
         }
 

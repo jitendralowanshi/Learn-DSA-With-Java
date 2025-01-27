@@ -3,15 +3,14 @@ package Bit_Manipulation;
 public class array {
 
     public static int[] sortAr(int[] arr) {
-        int n = arr.length;
-        int i=-1;
-        int j=-1;
+        int i= 0;
+        int j= arr.length-1;
          while (arr[i] > arr[j]) {
              int swap = arr[i];
              arr[i] = arr[j];
              arr[j] = swap;
              i++;
-             j++;
+             j--;
          }
         return arr;
     }

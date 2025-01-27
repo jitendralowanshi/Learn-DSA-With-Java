@@ -39,7 +39,7 @@ public class AllStringMethods {
 
 //        MORE USEFUL METHODS IN DSA
 
-//        8 EIGTH METHOD  charAt()
+//        8 EIGTH METHOD  charAt()  & setCharAt()
 //        this method return any character in a string
         System.out.println(name.charAt(0));
 
@@ -69,7 +69,7 @@ public class AllStringMethods {
 //        System.out.println(letters[1]);
 
 
-//        15 FIFTEEN TH METHOD  isEmpty()
+//        15 FIFTEENTH METHOD  isEmpty()
         String animal = "     ";
 
         if (animal.isEmpty()) {
