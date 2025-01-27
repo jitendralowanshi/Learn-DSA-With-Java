@@ -77,8 +77,6 @@ public class MedianTwoSortedArrays {
         return median;
     }
 
-
-
     public static void abc(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;
