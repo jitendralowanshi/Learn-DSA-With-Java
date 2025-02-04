@@ -1,4 +1,4 @@
-package Bit_Manipulation;
+package Learn_Arrays;
 
 public class array {
 

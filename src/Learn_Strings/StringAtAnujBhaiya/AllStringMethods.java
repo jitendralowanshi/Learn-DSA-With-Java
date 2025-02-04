@@ -51,6 +51,14 @@ public class AllStringMethods {
         System.out.println(age);
         System.out.println(stringAge+6);
 
+//        10 TENTH METHOD  Integer.parseInt()
+//        this method change string into int i
+        String str = "123";
+        int num = Integer.parseInt(s);
+        System.out.println("mul is "+num);
+
+
+
 
 
 //        10 TENTH METHOD       replace()
