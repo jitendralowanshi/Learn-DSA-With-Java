@@ -39,8 +39,6 @@ public class ImplimentationLL {
 
     }
 
-
-
     public static void main(String[] args) {
         ImplimentationLL list = new ImplimentationLL();
         list.addfirst(5);
