@@ -1,6 +1,6 @@
 package Algorithms.Searching;
 
-public class binarsySearchUsingRecursion {
+public class BinarsySearchUsingRecursion {
     public static int recursivBinarySerach(int[] arr, int target, int start, int end) {
 
         int mid = start + (end-start)/2;

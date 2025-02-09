@@ -1,6 +1,6 @@
 package Algorithms.Searching;
 
-public class binarySearch {
+public class BinarySearch {
     public static int binSearch(int[] arr, int target) {
 //        time complexity is O(logn)
         int n = arr.length;

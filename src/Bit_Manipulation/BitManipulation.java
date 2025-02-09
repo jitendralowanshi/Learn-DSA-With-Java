@@ -23,7 +23,7 @@ package Bit_Manipulation;
  4> Update Bit
 
  */
-public class bitManipulation {
+public class BitManipulation {
     public static void main(String[] args) {
 
     }

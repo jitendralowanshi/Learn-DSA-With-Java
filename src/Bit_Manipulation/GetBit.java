@@ -1,7 +1,7 @@
 package Bit_Manipulation;
 //
 
-public class getBit {
+public class GetBit {
     public static void main(String[] args) {
         int n = 5;        //binary ->  0101
         int pos = 3;

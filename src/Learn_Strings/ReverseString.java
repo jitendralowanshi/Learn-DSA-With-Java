@@ -1,6 +1,6 @@
 package Learn_Strings;
 
-public class reverseString {
+public class ReverseString {
     public static void reversStr(String name) {
 
     }

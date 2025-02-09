@@ -1,6 +1,6 @@
 package Learn_Arrays;
 
-public class reverseArray {
+public class ReverseArray {
     public static int[] reverseArr(int[] arr) {
         int i = 0;
         int j = arr.length-1;

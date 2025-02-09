@@ -1,6 +1,6 @@
 package Learn_Arrays;
 
-public class compareLoops {
+public class CompareLoops {
     public static void forLoop(int[] nums, int target) {
         int n = nums.length;
 

@@ -1,6 +1,6 @@
 package Algorithms.Searching;
 
-public class linearSearch {
+public class LinearSearch {
 
     public static void linearSerch(int[] arr, int target) {
         int n = arr.length;

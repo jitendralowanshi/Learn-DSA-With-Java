@@ -1,6 +1,6 @@
 package Bit_Manipulation;
 
-public class setBit {
+public class SetBit {
     public static void main(String[] args) {
         int n = 5;   // 0101
         int pos = 1;

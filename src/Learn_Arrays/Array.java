@@ -1,6 +1,6 @@
 package Learn_Arrays;
 
-public class array {
+public class Array {
 
     public static int[] sortAr(int[] arr) {
         int i= 0;
