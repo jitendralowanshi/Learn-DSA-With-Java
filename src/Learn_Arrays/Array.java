@@ -21,6 +21,7 @@ public class Array {
         for (int i: ans) {
             System.out.print(i+" ");
         }
+//git
 
     }
 }

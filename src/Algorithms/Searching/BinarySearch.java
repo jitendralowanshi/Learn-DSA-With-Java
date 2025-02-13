@@ -24,7 +24,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int target = 5;
         int[] arr = {1,2,3,4,5,6,7};
-       int ans = binSearch(arr, target);
+            int ans = binSearch(arr, target);
         System.out.println(ans);
 
     }
