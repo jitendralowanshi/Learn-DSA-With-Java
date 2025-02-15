@@ -1,4 +1,4 @@
-package Practice_DsaWithJava.Array;
+package PracticeDSA.Array;
 
 import java.util.Scanner;
 

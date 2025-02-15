@@ -1,4 +1,4 @@
-package Practice_DsaWithJava.LinkedList;
+package PracticeDSA.LinkedList;
 
 public class LL {
     Node head;

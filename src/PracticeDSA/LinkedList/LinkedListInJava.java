@@ -1,4 +1,4 @@
-package Practice_DsaWithJava.LinkedList;
+package PracticeDSA.LinkedList;
 
 import java.util.LinkedList;
 import java.util.Scanner;

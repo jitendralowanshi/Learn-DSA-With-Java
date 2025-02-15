@@ -1,4 +1,4 @@
-package Practice_DsaWithJava.Stack;
+package PracticeDSA.Stack;
 
 public class StackClass {
 
