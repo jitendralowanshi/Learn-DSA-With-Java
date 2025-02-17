@@ -38,8 +38,8 @@ public class _04_MergeSort {
         }
 
         int mid = si + (ei-si)/2;
-        divide(arr, si, ei);
-        divide(arr,mid+1, si);
+        divide(arr, si, mid);
+        divide(arr,mid+1, ei);
         conquer(arr, si, mid, ei);
     }
 
@@ -50,7 +50,7 @@ public class _04_MergeSort {
         divide(arr, 0, n-1);
 
         for(int i=0; i<n; i++) {
-            System.out.println(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
     }

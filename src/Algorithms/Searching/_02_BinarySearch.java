@@ -7,6 +7,7 @@ public class _02_BinarySearch {
         int start = 0;
         int end = n-1;
 
+
         while(start <= end) {
             int mid = start + (end-start)/2;
             if(target > arr[mid]) {
@@ -19,12 +20,13 @@ public class _02_BinarySearch {
                 return mid;
             }
         }
+
         return -1;
     }
     public static void main(String[] args) {
         int target = 5;
         int[] arr = {1,2,3,4,5,6,7};
-            int ans = binSearch(arr, target);
+        int ans = binSearch(arr, target);
         System.out.println(ans);
 
     }
