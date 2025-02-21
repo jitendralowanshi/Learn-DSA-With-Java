@@ -44,7 +44,7 @@ public class MergeSortPhyWallah {
 
         int mid = startIndex + (endIndex - startIndex)/2;
 
-//        this two call after divide array
+//        Recursive call - this two call after divide array
         mergeSort(arr, startIndex, mid);                  //  call left array [4,1,3]
         mergeSort(arr, mid+1, endIndex);        //  call right array [5,2,6
 
