@@ -1,7 +1,10 @@
 package PracticeDSA.LinkedList;
 
 public class List {
+
     Node head;
+
+//    create a linked list
     public class Node {
         int data;
         Node next;
@@ -12,6 +15,8 @@ public class List {
         }
     }
 
+
+//    creat a add first node in a linked list
     public void addFirst(int data) {
         Node newNode = new Node(data);
         if(head == null) {
@@ -23,12 +28,14 @@ public class List {
 
     }
 
+//    create a add last function in linked list
     public void addLast(int data) {
         Node newNode = new Node(data);
         if(head == null) {
             head = newNode;
             return;
         }
+
         Node currNode = head;
         while(currNode.next != null) {
             currNode = currNode.next;
@@ -36,6 +43,7 @@ public class List {
         currNode.next = newNode;
     }
 
+//    print list function
     public void printList() {
         if(head == null) {
             return;
@@ -49,6 +57,34 @@ public class List {
         System.out.println("null");
     }
 
+//    create a delet function
+    public void deletFirst() {
+        if(head == null) {
+            System.out.println("list is empty");
+            return;
+        }
+        head = head.next;
+    }
+
+//    deletLast function
+    public void deletLast() {
+        if(head == null) {
+            System.out.println("list is empty");
+            return;
+        }
+        if(head.next == null) {
+            head = null;
+        }
+
+        Node secondLast = head;
+        Node lastNode = head.next;
+
+        while(lastNode.next != null) {
+            lastNode = lastNode.next;
+            secondLast = secondLast.next;
+        }
+        secondLast.next = null;
+    }
 
     public static void main(String[] args) {
         List list = new List();
@@ -56,6 +92,13 @@ public class List {
         list.addLast(5);
         list.addFirst(3);
         list.printList();
+
+        list.deletLast();
+        list.printList();
+
+        list.deletFirst();
+        list.printList();
+        
     }
 
 }
