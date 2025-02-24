@@ -30,6 +30,16 @@ public class Basicsll {
         displayRec(head.next);
     }
 
+    //reverse list using recurisive function
+//    all calls save in stack, after print list return on reverse stack
+    public static void reverseList(Node head) {
+        if(head == null) {
+            return;
+        }
+        reverseList(head.next);
+        System.out.print(head.data+" ");
+    }
+
 
     public static void main(String[] args) {
 //        Basicsll list = new Basicsll();
@@ -83,6 +93,10 @@ public class Basicsll {
 
         System.out.println();
         displayRec(a);
+        System.out.println();
+
+        System.out.println("Using recursive function");
+        reverseList(a);
 
 
 
