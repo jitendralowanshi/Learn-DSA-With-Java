@@ -22,6 +22,7 @@ public class Basicsll {
         System.out.println();
     }
 
+//    displya a list using recursive functio n
     public static void displayRec(Node head) {
         if(head == null) {
             return;
@@ -38,6 +39,17 @@ public class Basicsll {
         }
         reverseList(head.next);
         System.out.print(head.data+" ");
+    }
+
+//    print list lenght
+    public static int length(Node head) {
+      Node temp = head;
+      int count = 0;
+      while (temp != null) {
+          count++;
+          temp = temp.next;
+      }
+      return count;
     }
 
 
@@ -97,10 +109,10 @@ public class Basicsll {
 
         System.out.println("Using recursive function");
         reverseList(a);
+        System.out.println();
 
-
-
-
+        System.out.println();
+        System.out.println("total length is "+length(a));
 
 
 
