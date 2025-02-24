@@ -27,12 +27,14 @@ public class LinkedList {
 
 //    addlast function
     public void addLast(int data) {
+//        creat a new node
         Node newNode = new Node(data);
         if(head == null) {
             head = newNode;
             return;
         }
 
+//        create a nes node jo head ko poit kr rha hai
         Node currNode = head;
         while (currNode.next != null) {
             currNode = currNode.next;
