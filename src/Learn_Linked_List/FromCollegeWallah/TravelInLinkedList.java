@@ -1,4 +1,4 @@
-package LinkedListFromCollegeWallah;
+package Learn_Linked_List.FromCollegeWallah;
 
 public class TravelInLinkedList {
     public static class Node {

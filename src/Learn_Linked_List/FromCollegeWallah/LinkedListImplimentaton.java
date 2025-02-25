@@ -1,4 +1,4 @@
-package LinkedListFromCollegeWallah;
+package Learn_Linked_List.FromCollegeWallah;
 
 public class LinkedListImplimentaton {
     Node head;
@@ -11,8 +11,6 @@ public class LinkedListImplimentaton {
             this.next = null;
         }
     }
-
-
 
 //    Create a linked list class
     public static class linkedlist {
@@ -126,6 +124,7 @@ public class LinkedListImplimentaton {
             size++;
          }
 
+         //get element at index
          public int getElementAt(int idx) {
              if(idx < 0 || idx > size) {
                  System.out.print("get wrong index ");
@@ -139,7 +138,19 @@ public class LinkedListImplimentaton {
            return temp.data;
          }
 
-
+    //        DeletAtIndex method
+    public void deletAtIndex(int idx) {
+        Node temp = head;
+        if(idx == 0) {
+            head = head.next;
+        }
+        for(int i=1; i<idx; i++) {
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+        tail = temp;
+        size--;
+    }
 
 //         travel a Linked List
          public void travel(Node head, int val) {
@@ -151,9 +162,9 @@ public class LinkedListImplimentaton {
             temp.next = t;
         }
 
+
+
     }
-
-
 
     public static void main(String[] args) {
         linkedlist list = new linkedlist();
@@ -190,7 +201,7 @@ public class LinkedListImplimentaton {
 //        System.out.println(list.tail.data);
 //
         list.insertAtEnd(500);
-        list.insertAtStart(-1);
+        list.insertAtStart(60);
         list.insertAt(4,599);
 //        list.display();
         list.insertAtEnd(100);
@@ -200,6 +211,12 @@ public class LinkedListImplimentaton {
 
         list.delLast();
         list.display();
+//        System.out.println(list.getElementAt(5));
+
+        list.deletAtIndex(8);
+        list.deletAtIndex(7);
+        list.deletAtIndex(6);
+
         System.out.println();
         list.display();
         System.out.println("head  = "+list.head.data);
@@ -207,8 +224,6 @@ public class LinkedListImplimentaton {
         System.out.println("list size is = "+list.size);
 //        System.out.println(list.getElementAt(8));
 //        System.out.println(list.getElementAt(9));
-
-
 
     }
 }
