@@ -18,7 +18,7 @@ public class LinkedListImplimentaton {
         Node tail = null;
 
 
-//        create a insertAtend method
+//        create a insertAtEnd method
         public void insertAtEnd(int data) {
             Node newNode = new Node(data);
 
@@ -32,17 +32,18 @@ public class LinkedListImplimentaton {
                 temp = temp.next;
             }
             temp.next = newNode;
-
+            tail = newNode;
         }
 
 
-//        create a insertAtLast Method
+//        create a insertAtStart Method
         public void insertAtStart(int data) {
             Node newNode = new Node(data);
             if(head == null) {
                 head = newNode;
                 return;
             }
+
             newNode.next = head;
             head = newNode;
         }
@@ -53,9 +54,20 @@ public class LinkedListImplimentaton {
                 System.out.print(temp.data+" ");
                 temp = temp.next;
             }
+           System.out.println();
        }
 
-//       create a delLast Node method
+       public int size() {
+            Node temp = head;
+            int count = 0;
+            while (temp != null) {
+                count++;
+                temp = temp.next;
+            }
+            return count;
+       }
+
+//       create a DeletLast Node method
         public void delLast() {
             if(head.next == null) {
                 head = null;
@@ -69,16 +81,43 @@ public class LinkedListImplimentaton {
                 secLast = secLast.next;
             }
             secLast.next = null;
+            tail = secLast;
         }
 
 
-//        create a first Node Method
+//        create a DeletFirst Node Method
         public void delStart() {
             if(head.next == null) {
                 head = null;
             }
             head = head.next;
+
         }
+
+
+//        Insert Node in given Index position
+         public void insertAt(int idx, int val) {
+            Node newNode = new Node(val);
+            Node temp = head;
+
+            if(idx == 0) {
+                insertAtStart(val);
+                return;
+            }
+            else if(idx<0 || idx > size()) {
+                System.out.println("wrong index");
+                return;
+            }
+
+            for(int i=1; i<idx; i++) {
+                temp = temp.next;
+            }
+
+            newNode.next = temp.next;
+            temp.next = newNode;
+         }
+
+
     }
 
 
@@ -89,33 +128,52 @@ public class LinkedListImplimentaton {
         list.insertAtEnd(1);
         list.insertAtEnd(2);
         list.display();
-        System.out.println();
 
         list.insertAtEnd(3);
         list.insertAtEnd(4);
-
         list.display();
-        System.out.println();
 
-        list.insertAtStart(0);
+//        list.insertAtStart(0);
         list.insertAtStart(-1);
         list.insertAtStart(-2);
         list.insertAtEnd(5);
         list.insertAtEnd(6);
         list.display();
-        System.out.println();
 
         list.delLast();
         list.delLast();
         list.display();
-        System.out.println();
 
         list.delStart();
         list.display();
-        System.out.println();
 
         list.delStart();
         list.display();
+
+        list.insertAt(2,22);
+        list.insertAt(0,100);
+        list.insertAt(0,99);
+        list.display();
+
+        System.out.println(list.head.data);
+        System.out.println(list.tail.data);
+
+        list.insertAtEnd(500);
+//        list.insertAtStart(-1);
+        list.insertAt(4,599);
+        list.display();
+        list.insertAtEnd(100);
+
+        list.insertAt(-1, 666);
+        list.insertAt(12, 666);
+
+
+        System.out.println();
+        list.display();
+        System.out.println("head  = "+list.head.data);
+        System.out.println("tail  = "+list.tail.data);
+        System.out.println("list size is = "+list.size());
+
 
     }
 }
