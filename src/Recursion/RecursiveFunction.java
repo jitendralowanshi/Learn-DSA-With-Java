@@ -1,4 +1,4 @@
-package Learn_Recursion;
+package Recursion;
 
 public class RecursiveFunction {
 

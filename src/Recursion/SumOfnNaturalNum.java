@@ -1,4 +1,4 @@
-package Learn_Recursion;
+package Recursion;
 
 public class SumOfnNaturalNum {
     public static void sumOfNaturalNum(int i, int n, int sum) {
