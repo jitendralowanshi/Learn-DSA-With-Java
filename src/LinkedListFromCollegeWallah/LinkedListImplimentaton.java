@@ -117,6 +117,20 @@ public class LinkedListImplimentaton {
             temp.next = newNode;
          }
 
+         public int getElementAt(int idx) {
+             if(idx<0 || idx >= size()) {
+                 System.out.println("wrong index");
+                 return idx;
+             }
+
+
+           Node temp = head;
+           for(int i=0; i<idx; i++) {
+               temp = temp.next;
+           }
+           return temp.data;
+         }
+
 
     }
 
@@ -173,6 +187,8 @@ public class LinkedListImplimentaton {
         System.out.println("head  = "+list.head.data);
         System.out.println("tail  = "+list.tail.data);
         System.out.println("list size is = "+list.size());
+        System.out.println(list.getElementAt(8));
+        System.out.println(list.getElementAt(10));
 
 
     }
