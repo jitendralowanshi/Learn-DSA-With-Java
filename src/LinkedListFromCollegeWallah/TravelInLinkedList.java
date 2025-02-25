@@ -1,6 +1,6 @@
 package LinkedListFromCollegeWallah;
 
-public class InsertNodeMethod {
+public class TravelInLinkedList {
     public static class Node {
         int data;
         Node next;
@@ -14,7 +14,6 @@ public class InsertNodeMethod {
     public static class Linkedlist {
         Node head = null;
         Node tail = null;
-
 
 
     }

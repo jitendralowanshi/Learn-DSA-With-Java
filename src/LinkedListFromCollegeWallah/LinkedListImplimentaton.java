@@ -73,15 +73,24 @@ public class LinkedListImplimentaton {
                 return;
             }
 
-            Node secLast = head;
-            Node lastNode = head.next;
-            while (lastNode.next != null) {
-                lastNode = lastNode.next;
-                secLast = secLast.next;
+            Node secLastNode = head;
+            while (secLastNode.next.next != null) {
+                secLastNode = secLastNode.next;
             }
-            secLast.next = null;
-            tail = secLast;
+            secLastNode.next = null;
+            tail = secLastNode;
             size--;
+
+//    ye code bhi right hai but isme do pinter banane pade
+//            Node secLast = head;
+//            Node lastNode = head.next;
+//            while (lastNode.next != null) {
+//                lastNode = lastNode.next;
+//                secLast = secLast.next;
+//            }
+//            secLast.next = null;
+//            tail = secLastNode;
+//            size--;
         }
 
 
@@ -112,7 +121,6 @@ public class LinkedListImplimentaton {
             for(int i=1; i<idx; i++) {
                 temp = temp.next;
             }
-
             newNode.next = temp.next;
             temp.next = newNode;
             size++;
@@ -131,6 +139,17 @@ public class LinkedListImplimentaton {
            return temp.data;
          }
 
+
+
+//         travel a Linked List
+         public void travel(Node head, int val) {
+            Node t = new Node(val);
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = t;
+        }
 
     }
 
@@ -179,14 +198,16 @@ public class LinkedListImplimentaton {
         list.insertAt(-1, 666);
         list.insertAt(12, 666);
 
-
+        list.delLast();
+        list.display();
         System.out.println();
         list.display();
         System.out.println("head  = "+list.head.data);
         System.out.println("tail  = "+list.tail.data);
         System.out.println("list size is = "+list.size);
-        System.out.println(list.getElementAt(8));
-        System.out.println(list.getElementAt(9));
+//        System.out.println(list.getElementAt(8));
+//        System.out.println(list.getElementAt(9));
+
 
 
     }
