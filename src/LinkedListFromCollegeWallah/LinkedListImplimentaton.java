@@ -12,10 +12,13 @@ public class LinkedListImplimentaton {
         }
     }
 
+
+
 //    Create a linked list class
     public static class linkedlist {
         Node head = null;
         Node tail = null;
+        int size = 0;
 
 
 //        create a insertAtEnd method
@@ -24,6 +27,8 @@ public class LinkedListImplimentaton {
 
             if(head == null) {
                 head = newNode;
+                tail = newNode;
+                size++;
                 return;
             }
 
@@ -33,6 +38,8 @@ public class LinkedListImplimentaton {
             }
             temp.next = newNode;
             tail = newNode;
+            size++;
+
         }
 
 
@@ -46,6 +53,7 @@ public class LinkedListImplimentaton {
 
             newNode.next = head;
             head = newNode;
+            size++;
         }
 
        public void display() {
@@ -57,15 +65,6 @@ public class LinkedListImplimentaton {
            System.out.println();
        }
 
-       public int size() {
-            Node temp = head;
-            int count = 0;
-            while (temp != null) {
-                count++;
-                temp = temp.next;
-            }
-            return count;
-       }
 
 //       create a DeletLast Node method
         public void delLast() {
@@ -82,6 +81,7 @@ public class LinkedListImplimentaton {
             }
             secLast.next = null;
             tail = secLast;
+            size--;
         }
 
 
@@ -91,7 +91,7 @@ public class LinkedListImplimentaton {
                 head = null;
             }
             head = head.next;
-
+            size--;
         }
 
 
@@ -104,8 +104,8 @@ public class LinkedListImplimentaton {
                 insertAtStart(val);
                 return;
             }
-            else if(idx<0 || idx > size()) {
-                System.out.println("wrong index");
+            else if(idx<0 || idx > size) {
+                System.out.println("wrong index "+ idx);
                 return;
             }
 
@@ -115,17 +115,17 @@ public class LinkedListImplimentaton {
 
             newNode.next = temp.next;
             temp.next = newNode;
+            size++;
          }
 
          public int getElementAt(int idx) {
-             if(idx<0 || idx >= size()) {
-                 System.out.println("wrong index");
+             if(idx < 0 || idx > size) {
+                 System.out.print("get wrong index ");
                  return idx;
              }
 
-
            Node temp = head;
-           for(int i=0; i<idx; i++) {
+           for(int i=1; i<idx; i++) {
                temp = temp.next;
            }
            return temp.data;
@@ -141,43 +141,41 @@ public class LinkedListImplimentaton {
 
         list.insertAtEnd(1);
         list.insertAtEnd(2);
-        list.display();
+//        list.display();
 
         list.insertAtEnd(3);
         list.insertAtEnd(4);
-        list.display();
-
-//        list.insertAtStart(0);
-        list.insertAtStart(-1);
-        list.insertAtStart(-2);
+////        list.display();
+//
+        list.insertAtStart(0);
         list.insertAtEnd(5);
         list.insertAtEnd(6);
-        list.display();
+////        list.display();
 
         list.delLast();
         list.delLast();
-        list.display();
+//        list.display();
 
         list.delStart();
-        list.display();
-
+//        list.display();
+//
         list.delStart();
-        list.display();
+//        list.display();
 
         list.insertAt(2,22);
         list.insertAt(0,100);
         list.insertAt(0,99);
-        list.display();
-
-        System.out.println(list.head.data);
-        System.out.println(list.tail.data);
-
+//        list.display();
+//
+//        System.out.println(list.head.data);
+//        System.out.println(list.tail.data);
+//
         list.insertAtEnd(500);
-//        list.insertAtStart(-1);
+        list.insertAtStart(-1);
         list.insertAt(4,599);
-        list.display();
+//        list.display();
         list.insertAtEnd(100);
-
+//
         list.insertAt(-1, 666);
         list.insertAt(12, 666);
 
@@ -186,9 +184,9 @@ public class LinkedListImplimentaton {
         list.display();
         System.out.println("head  = "+list.head.data);
         System.out.println("tail  = "+list.tail.data);
-        System.out.println("list size is = "+list.size());
+        System.out.println("list size is = "+list.size);
         System.out.println(list.getElementAt(8));
-        System.out.println(list.getElementAt(10));
+        System.out.println(list.getElementAt(9));
 
 
     }
