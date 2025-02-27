@@ -1,4 +1,4 @@
-package Learn_Stack;
+package Learn_Stack.FromCollegeWallah;
 
 public class ImplimentationOfStack {
 }
