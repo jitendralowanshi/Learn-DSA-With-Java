@@ -12,7 +12,7 @@ public class RemoveNthNodeFromEnd {
         }
     }
 
-    public static Node nthNode(Node head, int n) {
+    public static Node findingNthNode(Node head, int n) {
         Node temp = head;
         int count = 0;
         while (temp != null) {
@@ -29,7 +29,7 @@ public class RemoveNthNodeFromEnd {
     }
 
 
-    public static Node nthNode2(Node head, int n) {
+    public static Node findingNthNode2(Node head, int n) {
         Node slow = head;
         Node fast = head;
         for (int i=1; i<n; i++){
@@ -41,10 +41,11 @@ public class RemoveNthNodeFromEnd {
             fast = fast.next;
         }
 
-        slow.next = fast;
+//        slow.next = fast;
         return slow;
 
     }
+
 
 
     public static void main(String[] args) {
@@ -64,12 +65,14 @@ public class RemoveNthNodeFromEnd {
 //        100 13 4 5 12 10
 
 
-        Node temp = nthNode(a,3);
+        Node temp = findingNthNode(a,2);
         System.out.println(temp.data);
 
-        Node t = nthNode2(a, 3);
+        Node t = findingNthNode2(a,2);
         System.out.println(t.data);
 
+//       Node p =  removeNthNode(a, 2);
+//        System.out.println(p.data);
 
 
     }
