@@ -152,7 +152,7 @@ public class LinkedListImplimentaton {
         size--;
     }
 
-//         travel a Linked List
+//         travel a Linked List , add node at last
          public void travel(Node head, int val) {
             Node t = new Node(val);
             Node temp = head;
