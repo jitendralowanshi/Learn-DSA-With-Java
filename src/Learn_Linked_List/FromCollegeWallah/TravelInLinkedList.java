@@ -18,8 +18,6 @@ public class TravelInLinkedList {
 
     }
 
-
-
     public static void main(String[] args) {
         Linkedlist list = new Linkedlist();
 

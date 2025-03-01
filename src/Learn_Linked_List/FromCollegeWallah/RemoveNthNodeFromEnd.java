@@ -46,6 +46,27 @@ public class RemoveNthNodeFromEnd {
 
     }
 
+    public static Node removeNthNodeFromEnd(Node head, int n) {
+        Node slow = head;
+        Node fast = head;
+
+        for (int i=1; i<=n; i++){
+            fast = fast.next;
+        }
+
+        while (fast.next != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+//        slow.next = slow.next.next;
+        Node t = head;
+        while(t.next != null) {
+            System.out.print(t.data+" ");
+            t = t.next;
+        }
+        System.out.println();
+        return head;
+    }
 
 
     public static void main(String[] args) {
@@ -71,8 +92,8 @@ public class RemoveNthNodeFromEnd {
         Node t = findingNthNode2(a,2);
         System.out.println(t.data);
 
-//       Node p =  removeNthNode(a, 2);
-//        System.out.println(p.data);
+       Node p =  removeNthNodeFromEnd(a,  2);
+        System.out.println(p.data);
 
 
     }
