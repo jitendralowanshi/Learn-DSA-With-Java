@@ -25,6 +25,7 @@ public class ReverseALinkedList {
              prev = curr;
              curr = temp;
          }
+//         print revers linked list
          while(prev.next != null) {
              System.out.print(prev.data+" ");
              prev = prev.next;
