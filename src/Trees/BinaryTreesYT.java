@@ -1,4 +1,4 @@
-package Tree;
+package Trees;
 
 public class BinaryTreesYT {
 
