@@ -3,6 +3,7 @@ package Learn_Arrays.FromCollegeWallah;
 import java.util.Scanner;
 
 public class RorateArrayKSteps {
+
     public static void display(int[] arr) {
 //        int n = arr.length;
         for(int ans: arr) {
@@ -35,8 +36,6 @@ public class RorateArrayKSteps {
 
         int[] ans = rotateKStepsArr(arr, rr);
         display(ans);
-
-
 
     }
 }
