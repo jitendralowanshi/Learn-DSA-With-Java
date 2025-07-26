@@ -2,7 +2,7 @@ package Algorithms.Searching;
 
 public class _02_BinarySearch {
     public static int binSearch(int[] arr, int target) {
-//        time complexity is O(logn)
+//  time complexity is O(logn)
         int n = arr.length;
         int start = 0;
         int end = n-1;
@@ -27,7 +27,7 @@ public class _02_BinarySearch {
         int target = 5;
         int[] arr = {1,2,3,4,5,6,7};
         int ans = binSearch(arr, target);
-        System.out.println(ans);
+        System.out.println("target index is : "+ans);
 
     }
 }

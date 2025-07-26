@@ -1,6 +1,7 @@
 package Algorithms.Sorthing;
 
 public class _04_MergeSort {
+
     public static void conquer(int[] arr, int si, int mid, int ei) {
         int[] merged = new int[ei - si + 1];
 
@@ -40,6 +41,8 @@ public class _04_MergeSort {
         int mid = si + (ei-si)/2;
         divide(arr, si, mid);
         divide(arr,mid+1, ei);
+
+        //call conquer method
         conquer(arr, si, mid, ei);
     }
 

@@ -1,4 +1,4 @@
-package Algorithms.Sorthing;
+package Algorithms.Sorthing.CollegWallah;
 
 public class MergeSortClg {
 

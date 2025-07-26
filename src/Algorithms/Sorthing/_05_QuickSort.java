@@ -1,6 +1,7 @@
 package Algorithms.Sorthing;
 
 public class _05_QuickSort {
+    //from apna college ````
 
     public static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
