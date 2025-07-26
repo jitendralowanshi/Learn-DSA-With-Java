@@ -3,10 +3,9 @@ package Algorithms.Sorthing;
 public class MergeSortPhyWallah {
 
     public static void merge(int[] arr, int startIndex, int mid, int endIndex) {
-        //        this is for merge arr index
+        // this is for merge arr index
         int x = 0;
         int[] merge = new int[endIndex - startIndex + 1];
-
 
         int n1 = startIndex;
         int n2 = mid+1;
@@ -57,7 +56,7 @@ public class MergeSortPhyWallah {
 
 
     public static void main(String[] args) {
-        int[] arr = {4,1,3,5,2,6};
+        int[] arr = {4,1,3,5,2,6,0};
         int n = arr.length;
 
 //        call merge sort function
